@@ -1,6 +1,7 @@
 # Tycho
 
 ```
+git submodule update --init --recursive
 npm i
 npm run test
 ```
@@ -8,5 +9,6 @@ npm run test
 ```
 minikube start
 helm init
-helm install cp-helm-charts
+helm install ./modules/cp-helm-charts
+kubectl get pods
 ```
